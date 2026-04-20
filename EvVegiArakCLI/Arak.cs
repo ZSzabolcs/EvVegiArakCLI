@@ -25,5 +25,11 @@ namespace EvVegiArakCLI
             November = int.Parse(temp[4]);
             December = int.Parse(temp[5]);
         }
+
+        public int MinHonapSorszam()
+        {
+            List<int> honapAr = new List<int>() { Szeptember, Oktober, November, December };
+            return honapAr.IndexOf(honapAr.Min())+9;
+        }
     }
 }

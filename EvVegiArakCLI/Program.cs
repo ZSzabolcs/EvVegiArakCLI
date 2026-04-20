@@ -1,6 +1,7 @@
 ﻿
 
 
+
 namespace EvVegiArakCLI
 {
     public class Program
@@ -10,11 +11,35 @@ namespace EvVegiArakCLI
         {
             Beolvasas();
             Feladat2();
+            Feladat3();
+        }
+
+        private static void Feladat3()
+        {
+            Console.WriteLine("Kérem adja meg a termék kódját! ");
+            int kod = int.Parse(Console.ReadLine());
+            var termek = lista.FirstOrDefault(t => t.Kod == kod);
+            if ( termek == null)
+            {
+                Console.WriteLine("Nem található ilyen termék a listában. :(");
+            }
+            else
+            {
+                string honap = "";
+                switch (termek.MinHonapSorszam())
+                {
+                    case 9: honap = "szeptember"; break;
+                    case 10: honap = "október"; break;
+                    case 11: honap = "november"; break;
+                    case 12: honap = "december"; break;
+                }
+                Console.WriteLine($"A(z) {termek.Megnevezes.ToLower()} {honap} hónapban volt a legolcsóbb.");
+            }
         }
 
         public static void Feladat2()
         {
-            Console.WriteLine($"Az állományban {lista.Count()} db termék található.");
+            Console.WriteLine($"1. feladat:\nAz állományban {lista.Count()} db termék található.");
         }
 
         public static void Beolvasas()
