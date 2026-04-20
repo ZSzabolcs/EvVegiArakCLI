@@ -2,6 +2,7 @@
 
 
 
+
 namespace EvVegiArakCLI
 {
     public class Program
@@ -12,11 +13,17 @@ namespace EvVegiArakCLI
             Beolvasas();
             Feladat2();
             Feladat3();
+            Feladat6();
+        }
+
+        private static void Feladat6()
+        {
+            throw new NotImplementedException();
         }
 
         private static void Feladat3()
         {
-            Console.WriteLine("Kérem adja meg a termék kódját! ");
+            Console.Write("4. feladat:\nKérem adja meg a termék kódját! ");
             int kod = int.Parse(Console.ReadLine());
             var termek = lista.FirstOrDefault(t => t.Kod == kod);
             if ( termek == null)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EvVegiArakCLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ac2237020623f9a71f4ffcf91cef5facb7ca20d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd7da9e225cbed56867ab8136e7a85712dcdedc7")]
 [assembly: System.Reflection.AssemblyProductAttribute("EvVegiArakCLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EvVegiArakCLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
