@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EvVegiArakCLI
 {
-    internal class Arak
+    public class Arak
     {
         public int December { get; private set; }
         public int Kod { get; private set; }
